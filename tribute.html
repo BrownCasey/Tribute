@@ -7,8 +7,9 @@ body{
     margin: 0;
     font-family: 'Quicksand', sans-serif;
 }
+
 .bg-img {
-    min-height: 500px;
+    min-height: 700px;
     background: url(images/GoldenConcept.jpg) no-repeat;
     background-size: 100%;
 }
@@ -63,8 +64,11 @@ nav a {
 section, aside {
     padding: 10px 5px;
 }
-.height200 {
-    height: 200px;
+.CC {
+    height: 20px;
+    width: 20px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
 }
 .flex-container {
     display: flex;
@@ -73,11 +77,8 @@ section, aside {
 .flex-box:nth-child(1n) {
     width: 32%;
 }
-.CC {
-    height: 20px;
-    width: 20px;
-    background-color: #FFFFFF;
-    border-radius: 50%;
+.height200 {
+    height: 200px;
 }
 .left {
     float: left;
@@ -87,6 +88,21 @@ section, aside {
 }
 .width100 {
     min-width: 100%;
+}
+@media screen and (max-width: 1100px) {
+    .bg-img {
+        min-height: 500px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .bg-img {
+        min-height: 400px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .bg-img {
+        min-height: 300px;
+    }
 }
 </style>
 </head>
@@ -112,9 +128,8 @@ section, aside {
             <h2>"I've called science fiction 'reality ahead of schedule.'"</h2>
         </aside>
         <section class="flex-box">
-            <figure id="img-div"><!--
+            <figure id="img-div">
                 <img src="images/blade_runner_concept.jpg" id="image"/>
-                --><img src="images/GoldenConcept.jpg" id="image"/>
                 <figcaption id="img-caption">Blade Runner Concept</figcaption>
             </figure>
         </section>
