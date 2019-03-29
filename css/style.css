@@ -72,8 +72,8 @@ section, aside {
 .flex-box:nth-child(1n) {
     width: 32%;
 }
-.height200 {
-    height: 200px;
+.height150 {
+    height: 150px;
 }
 .left {
     float: left;
